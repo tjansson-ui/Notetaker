@@ -32,5 +32,25 @@ router.post("/api/notes", async (req, res) => {
   }
 })
 
+// DELETE route
+
+//TODO: enable id to all for proper deletion
+
+// router.delete("/api/notes/:id", async (req, res) => {
+//     try{
+//       const notes = JSON.parse(await fs.readFile(db, "utf-8"))
+
+//       const newNotes = notes.filter(note => note.id !== id)
+
+//       await fs.writeFile(path.join(db), JSON.stringify(newNotes))
+
+//       res.status(200).json({ message: 'Deletion request completed' })
+//     } catch(err) {
+//       res.status(500).send(err)
+//       console.error(err)
+//     }
+//   })
+  
+
 
 module.exports = router;

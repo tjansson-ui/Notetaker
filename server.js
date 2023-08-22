@@ -2,7 +2,7 @@ const express = require("express");
 const pages = require("./routes/pageRoutes");
 const api = require("./routes/apiRoutes");
 const app = express();
-const PORT=  process.env.PORT || 3001; 
+const PORT=  process.env.PORT || 3001; //Dynamic Port for once the Heroku access is corrected.
 
 // middleware
 app.use(express.static('public'));
